@@ -1,0 +1,21 @@
+# Relative paths are resolved from this file's directory.
+# Set this to the shared asset directory on the Linux host.
+models_root: /research/sapien/Models
+manifest_output_dir: /research/iclr/scene_manifests
+
+# Only these model directories are opened by SceneEditor at startup.
+# Paths are relative to models_root. Mapping entries with category/instance
+# are also accepted when a structured form is preferred.
+models:
+  - bottle/3517
+  - box/100189
+  - kettle/3971
+  - oven/7220
+  - bucket/100431
+# - category: box
+#   instance: 1001
+
+# The table is approximately 1x1x1. Previewed objects are normalized to this
+# maximum bounding-box extent.
+preview:
+  object_max_extent: 0.10

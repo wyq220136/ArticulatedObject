@@ -1,0 +1,34 @@
+output_root: ../SimDataset
+models_root: D:/research/sapien/Models
+seed: 1234
+pair_count: 50
+targets_per_scene: 2
+views_per_scene: 20
+candidate_slack: 20
+render:
+  render_scale: 0.75
+  timeout_sec: 150
+  width: 1920
+  height: 1080
+scene_policy:
+  min_clutter: 3
+  max_clutter: 8
+  target_part_kinds: []
+camera:
+  look_at_xyz: [0.0, -0.035, 0.12]
+  distance: 1.05
+  azimuth_deg: 0.0
+  elevation_deg: 30.0
+  roll_deg: 0.0
+  fov_deg: 40.0
+  lock_table_orientation: true
+  desired_fill: 0.82
+  framing_margin: 1.05
+normalization:
+  enabled: true
+  target_max_extent: 0.14
+  min_scale: 0.02
+  max_scale: 1.0
+quality:
+  min_target_pixels: 100
+  min_framing_fill: 0.0001

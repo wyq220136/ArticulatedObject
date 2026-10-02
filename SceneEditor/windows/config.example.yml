@@ -1,0 +1,16 @@
+# Windows SceneEditor configuration example.
+# Relative paths are resolved from this YAML file's directory.
+models_root: C:/path/to/sapien/Models
+manifest_output_dir: ./scene_manifests
+
+# Only these models are loaded. The full Models tree is never scanned.
+models:
+  - category: bottle
+    instance: 3517
+
+host: 127.0.0.1
+port: 8080
+
+preview:
+  # The table is approximately 1x1x1; objects are normalized to this size.
+  object_max_extent: 0.10
